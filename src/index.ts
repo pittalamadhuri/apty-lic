@@ -23,7 +23,7 @@ function main(): void {
   const signed = signJson(inputData.data, key.toString());
   fs.writeFileSync(inputData.outputPath, new Buffer(JSON.stringify(signed, null, 2), 'utf8'));
 
-  console.log(`Licence has been successfully generated and saved to "${inputData.outputPath}".`); // tslint:disable-line:no-console
+  console.log(`Licence has been successfully generated and saved to "${JSON.stringify(signed, null, 2)}".`); // tslint:disable-line:no-console
 }
 
 try {

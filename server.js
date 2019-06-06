@@ -2,6 +2,7 @@ const exec=require('child_process').exec;
 const express= require("express");
 var bodyParser = require('body-parser');
 const app = express();
+//var xhr=new XMLHttpRequest;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.get('/', function (req, res) {
     res.sendFile('D:/MyCodes/licence-cli/input.html');
@@ -12,8 +13,9 @@ app.post('/input', function (req, res) {
         if(err){
             res.send('Error');
         }
-        else
-        res.send('No Error');
+        else{
+        res.send(stdout);
+    }
     //res.send(name+ ' Submitted Successfully!');
     
 
@@ -23,3 +25,9 @@ app.post('/input', function (req, res) {
 var server = app.listen(5000, function () {
     console.log('Node server is running..');
 });
+
+
+
+
+
+
