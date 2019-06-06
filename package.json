@@ -1,0 +1,53 @@
+{
+  "name": "letznav-licence-cli",
+  "version": "1.0.9",
+  "description": "Client tools for creating licence keys for letzNav",
+  "main": "index.bundle.js",
+  "scripts": {
+    "build": "rimraf ./build/prod && mkdirp ./build/prod && cross-env NODE_ENV=production webpack --config ./webpack/webpack.config.prod.js --color",
+    "start": "rimraf ./build/dev && mkdirp ./build/dev && webpack --config ./webpack/webpack.config.dev.js --color",
+    "lint": "tslint \"src/**/*.ts\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navdev1/LetzNav.git"
+  },
+  "author": "Salsita Software s. r. o.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/navdev1/LetzNav/issues"
+  },
+  "homepage": "https://github.com/navdev1/LetzNav#readme",
+  "dependencies": {
+    "@types/command-line-args": "4.0.0",
+    "@types/json-stable-stringify": "1.0.32",
+    "@types/node-rsa": "0.4.0",
+    "awesome-typescript-loader": "3.2.3",
+    "body-parser": "^1.19.0",
+    "child_process": "^1.0.2",
+    "command-line-args": "4.0.7",
+    "command-line-usage": "4.0.1",
+    "cross-env": "5.0.5",
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "json-stable-stringify": "1.0.1",
+    "mkdirp": "0.5.1",
+    "optimize-js-plugin": "0.0.4",
+    "rimraf": "2.6.1",
+    "tslib": "1.7.1",
+    "typescript": "^2.4.2",
+    "webpack": "3.5.5",
+    "webpack-merge": "4.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.0.5",
+    "tslint": "5.6.0"
+  },
+  "engines": {
+    "node": ">= 6.7.0",
+    "npm": ">= 3"
+  }
+}
