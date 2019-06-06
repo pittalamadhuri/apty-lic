@@ -8,8 +8,8 @@ app.get('/', function (req, res) {
     res.sendFile('D:/MyCodes/licence-cli/input.html');
 });
 app.post('/input', function (req, res) {
-    var name = req.body.application + ' ' + req.body.customer;
-    exec("node index.js -a Madhuriiiiiiiiiiiiiiiiii -c Application -u http://111.93.27.187:8889/ -v '2017-12-31' -k development.pem",(err,stdout,stderr)=>{
+    var application = req.body.application;
+    exec("node index.js -a "+req.body.application+" -c "+req.body.customer+" -u "+req.body.url+" -v "+req.body.validto+" -m "+req.body.adcount+" -k development.pem",(err,stdout,stderr)=>{
         if(err){
             res.send('Error');
         }
@@ -17,9 +17,7 @@ app.post('/input', function (req, res) {
         res.send(stdout);
     }
     //res.send(name+ ' Submitted Successfully!');
-    
-
-})
+    })
 
 });
 var server = app.listen(5000, function () {

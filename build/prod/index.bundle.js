@@ -1328,7 +1328,7 @@ function main() {
     }
     var signed = Object(__WEBPACK_IMPORTED_MODULE_2__signer__["a" /* signJson */])(inputData.data, key.toString());
     __WEBPACK_IMPORTED_MODULE_0_fs__["writeFileSync"](inputData.outputPath, new Buffer(JSON.stringify(signed, null, 2), 'utf8'));
-    console.log("Licence has been successfully generated and saved to \"" + JSON.stringify(signed, null, 2) + "\"."); // tslint:disable-line:no-console
+    console.log(JSON.stringify(signed, null, 2)); // tslint:disable-line:no-console
 }
 try {
     main();
