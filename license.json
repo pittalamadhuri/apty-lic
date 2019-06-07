@@ -2,11 +2,11 @@
   "data": {
     "customer": "Madhuri",
     "applicationName": "JIRA",
-    "applicationUri": "https://www.google.com",
-    "created": "2019-06-07T05:17:14.722Z",
+    "applicationUri": "www.google.com",
+    "created": "2019-06-07T06:32:43.618Z",
     "validTo": "2019-12-31T00:00:00.000Z",
     "adminsCount": 5,
     "globalAdminsCount": "1"
   },
-  "signature": "eWcF79eFYJA1a9XUwQh3F7Q2olcC6K2tuYKhK6QwLYowT336kR/55gu3Fuo8yRZDibmfT0ByopQb4CjFkXZzSNhxN3xtf5VW1XsHShkHEVkRB0MueqvHCwybYZ6aNBIuydjAUHbEGAm/MhSTB4/yxGnhg+3DZ39ikptjRi+SHqiTGgjuMM1Ud/aPd7ra9O/DIJoFl+fCvInDs3twpQEVVp/WUnuwWOW3PMD8RNItiaYhLG9Ttjeb4lSy/ORDG5gsAOUMVyCM09omPYqsSwnwymhMF6CjBycmKMhCgbZpMgnX/l9jHIB7SY66R5poT5jD43R1Zix9/v1RBWGSkT/Ilg=="
+  "signature": "Im+n+hlIJroDEgymFRKuz9Kfyrj3iHJ0RmJqvZP9TrmNO5YF08thg+XCFGf6GF/feE61hThEiZMN363UIS7QMSed5UnEtGib2qj+FYL/QjW6FOjvzKKW/FiYVIZrNlWauJNd62whrDN4leSxyJ0zMH95r3Bn6vFDEfiRsX0GVhFH2FAQHu/sfspc2gOE7qf6vMU6jYLUDzv4GtQRhccR8A/1gVcr4EqWo8daTLbTRU0ameb5h3jVhHuofF4JSK7cmiuE+TE3YBV2oHSd1ixTQsHRFLguufzSumlvy4/HP2aX6fochel9hmJeQOjOm7Vrw6asoFzub3EYhChHDQYA6g=="
 }
